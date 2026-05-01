@@ -1,67 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Hernán Robledo | Portafolio</title>
+    <title>Portafolio - Hernán Robledo</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 
-    <!-- ICONOS -->
-    <link rel="icon" type="image/png" href="ico.png">
+    <!-- Iconos -->
+    <link rel="icon" type="image/png" href="img/ico.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-    <header class="navbar">
-        <div class="logo">Hernán Robledo</div>
-
+<!-- NAVBAR -->
+<header class="navbar">
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#sobre">Sobre mí</a>
             <a href="#proyectos">Proyectos</a>
+            <a href="#educacion">Educacion</a>
+            <a href="#cursos">Cursos Cortos</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
-    <section id="inicio">
-        <h2>Desarrollador Full Stack (en formación)</h2>
-        <p>Construyo soluciones web funcionales y eficientes.</p>
+<!-- INICIO -->
+<section id="inicio" class="inicio">
+    <div class="container">
+        <p class="dev">Desarrollado por</p>
+        <h1>Hernán Robledo</h1>
 
-        <a href="#proyectos" class="btn">Ver proyectos</a>
-        <a href="cv.pdf" class="btn" download>Descargar CV</a>
-    </section>
+        <div class="inicio-content">
+            <div class="texto">
+                <h2>Desarrollador Full Stack en formación</h2>
+                <p>Comprometido con el aprendizaje continuo y enfocado en desarrollarme en aquello que me apasiona.</p>
 
-    <section id="sobre">
+                <div class="botones">
+                    <a href="#proyectos" class="btn">Ver Proyectos</a>
+                    <a href="cv.pdf" download class="btn outline">Descargar CV</a>
+                </div>
+            </div>
+
+            <div class="imagen">
+                <img src="img/foto p2.jpeg" alt="perfil">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre hidden">
+    <div class="container">
         <h2>Sobre mí</h2>
 
-        <p class="sobre-texto">
-            Estudiante de Tecnología en Análisis y Desarrollo de Software, con formación como Técnico en Programación de
-            Software.
-            <br><br>
-            Cuento con conocimientos en desarrollo web, fundamentos de programación y soporte técnico, con interés en la
-            creación de soluciones tecnológicas funcionales y eficientes.
-            <br><br>
-            Me encuentro en constante aprendizaje, enfocado en fortalecer mis habilidades mediante la práctica y el
-            desarrollo de proyectos.
-            Actualmente en búsqueda de una oportunidad de contrato de aprendizaje donde pueda aplicar mis conocimientos
-            y seguir creciendo profesionalmente.
+        <p>
+            Estudiante de Tecnologías en Análisis y Desarrollo de Software, con formación como técnico en programación de software.
+            Cuenta con conocimientos en desarrollo web, fundamentos de programación y soporte técnico.
         </p>
-    </section>
+<br>
+        <p>
+            Actualmente enfocado en fortalecer mis habilidades mediante la práctica y el desarrollo de proyectos,
+            en búsqueda de una oportunidad de contrato de aprendizaje.
+        </p>
+    </div>
+</section>
 
-    <section id="proyectos">
+<!-- PROYECTOS -->
+<section id="proyectos" class="hidden">
+    <div class="container">
         <h2>Proyectos</h2>
 
         <div class="cards">
 
-            <!-- CARD 1 -->
             <div class="card">
                 <div class="card-img">
-                    <img src="Gestion.PNG" alt="Sistema de Inventario">
+                    <img src="img/Gestion.PNG" alt="Sistema de Inventario">
                 </div>
 
                 <div class="card-body">
-                    <h3>Sistema de Inventario (MAS RELEVANTE)</h3>
+                    <h3>Sistema de Inventario (Más relevante)</h3>
 
                     <p>
                         Aplicación web que permite gestionar productos mediante operaciones CRUD,
@@ -69,31 +86,28 @@
                     </p>
 
                     <div class="tech">
-                        <span class="badge python">Python</span>
                         <span class="badge flask">Flask</span>
                         <span class="badge html">HTML</span>
                         <span class="badge css">CSS</span>
+                        <span class="badge js">JavaScript</span>
                     </div>
 
-                    <div class="card-links">
-                        <a href="https://github.com/rbldhernan-fullS/CRUD.github.io/blob/main/app.py" target="_blank" class="btn github">
-                            <i class="fab fa-github"></i> Código
-                        </a>
-                    </div>
+                    <a href="https://github.com/rbldhernan-fullS/CRUD.github.io/blob/main/app.py" target="_blank" class="btn github">
+                        <i class="fab fa-github"></i> Ver código
+                    </a>
                 </div>
             </div>
 
-            <!-- CARD 2 -->
             <div class="card">
                 <div class="card-img">
-                    <img src="Web.PNG" alt="Página Web">
+                    <img src="img/Web.PNG" alt="Página Web">
                 </div>
 
                 <div class="card-body">
-                    <h3>Página Web Responsive (ESTRUCTURA)</h3>
+                    <h3>Página Web Responsive</h3>
 
                     <p>
-                        Desarrollo de una web adaptable a distintos dispositivos con un diseño moderno.
+                        Desarrollo de una web adaptable a distintos dispositivos con diseño moderno.
                     </p>
 
                     <div class="tech">
@@ -102,21 +116,50 @@
                         <span class="badge js">JavaScript</span>
                     </div>
 
-                    <div class="card-links">
-                        <a href="https://github.com/rbldhernan-fullS/website.github.io/blob/main/index.html" target="_blank" class="btn github">
-                            <i class="fab fa-github"></i> Código
-                        </a>
-                    </div>
+                    <a href="https://github.com/rbldhernan-fullS/website.github.io/blob/main/index.html" target="_blank" class="btn github">
+                        <i class="fab fa-github"></i> Ver código
+                    </a>
                 </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- EDUCACION -->
+<section id="educacion" class="educacion hidden">
+    <div class="container">
+        <h2>Educación</h2>
 
+        <div class="cards">
+            <div class="card">
+                <h3>Tecnología en Análisis y Desarrollo de Software</h3>
+                <p>SENA (En formación)</p>
+            </div>
 
+            <div class="card">
+                <h3>Técnico en Programación de Software</h3>
+                <p>SENA</p>
+            </div>
+            
+            <div class="card" id="card-ba">
+                <h3>Bachiller</h3>
+                <p>Francis Javier Matiz I.E.D</p>
+            </div>
+        </div>
 
-    <!-- contacto 1 -->
+        <div class="cursos" id="cursos" >
+            <h2>Cursos Cortos</h2>
+            <ul>
+                <li>HTML y CSS</li>
+                <li>JavaScript</li>
+                <li>Bases de Datos</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
     <section id="contacto">
         <h2>Contacto</h2>
         <p class="contact-desc">
@@ -156,18 +199,17 @@
         </div>
     </section>
 
-    <footer>
-        <p>Hernán Robledo | Full Stack en formación</p>
 
-        <div class="social">
-            <a href="https://github.com/rbldhernan-fullS" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&to=rbldhernan@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        </div>
 
-        <p>© HERNAN ROBLEDO - DERECHOS RESERVADOS (2026)</p>
-    </footer>
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Hernán Roleo</p>
+    <div class="icons">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fas fa-envelope"></i>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
